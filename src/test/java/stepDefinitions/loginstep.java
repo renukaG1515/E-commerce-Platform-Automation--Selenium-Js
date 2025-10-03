@@ -10,6 +10,8 @@ import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.Assert;
 
+import io.cucumber.java.en.*;
+
 public class loginstep {
 
 	WebDriver driver;
