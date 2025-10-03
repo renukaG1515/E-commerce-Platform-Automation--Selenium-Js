@@ -5,7 +5,7 @@ package runners;
 
 	@CucumberOptions(
 	    features = "src/test/resources/features",
-	    glue = "stepDefinitions",
+	    glue = "src/main/java/stepDefinitions",
 	    plugin = {"pretty", "html:target/cucumber-reports.html"},
 	    monochrome = true
 	)

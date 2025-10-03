@@ -1,5 +1,4 @@
-package stepDefinations;
-
+package stepDefinitions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,10 +10,8 @@ import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.Assert;
 
-
-
 public class loginstep {
-	
+
 	WebDriver driver;
 
     @Given("I launch the Swag Labs login page")
@@ -42,11 +39,11 @@ public class loginstep {
         Assert.assertEquals(currentUrl, "https://www.saucedemo.com/inventory.html");
         driver.quit();
     }
-}	
-	
-	
-	
-	
-	
 
-
+	
+	
+	
+	
+	
+	
+}
