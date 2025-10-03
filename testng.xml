@@ -1,0 +1,7 @@
+<suite name="SwagLabs Suite">
+  <test name="Login Test">
+    <classes>
+      <class name="runners.Testrunner"/>
+    </classes>
+  </test>
+</suite>
