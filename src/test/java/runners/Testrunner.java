@@ -6,8 +6,12 @@ package runners;
 	@CucumberOptions(
 	    features = "src/test/resources/features",
 	    glue = {"stepDefinitions"},
-	    plugin = {"pretty", "html:target/cucumber-reports.html"},
-	    monochrome = true
+	    plugin = {
+	            "pretty",
+	            "html:target/cucumber-html-report",
+	            "json:target/cucumber.json"
+	        },
+	        monochrome = true
 	)
 	public class Testrunner extends AbstractTestNGCucumberTests {
 	}
