@@ -33,22 +33,6 @@ Automated testing framework for the [SwagLabs Demo Site](https://www.saucedemo.c
 
 ---
 
-## 📂 Project Structure
-
-ecommerce-automation/
-├── src/
-│ ├── main/java/
-│ │ ├── pages/ # Page Object classes
-│ │ └── utils/ # Helpers (driver, waits, configs)
-│ └── test/java/
-│ ├── tests/ # Test cases
-│ └── runners/ # Test runners
-├── testng.xml # TestNG suite config
-├── pom.xml # Maven configuration
-└── README.md
-
----
-
 ## 🧪 Test Scenarios Covered
 
 | 🧾 Test Case             | 🧠 Description                        |
@@ -123,3 +107,20 @@ Easily integrate with:
 ✅ GitHub Actions
 
 ✅ Jenkins
+
+
+## 📂 Project Structure
+
+
+
+ecommerce-automation/
+├── src/
+│ ├── main/java/
+│ │ ├── pages/ # Page Object classes
+│ │ └── utils/ # Helpers (driver, waits, configs)
+│ └── test/java/
+│ ├── tests/ # Test cases
+│ └── runners/ # Test runners
+├── testng.xml # TestNG suite config
+├── pom.xml # Maven configuration
+└── README.md
