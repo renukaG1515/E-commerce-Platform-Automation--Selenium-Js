@@ -5,7 +5,7 @@ package runners;
 
 	@CucumberOptions(
 	    features = "src/test/resources/features",
-	    glue = {"stepDefinitions"},
+	    glue = {"stepDefinitions","utils"},
 	    plugin = {
 	            "pretty",
 	            "html:target/cucumber-html-report",
