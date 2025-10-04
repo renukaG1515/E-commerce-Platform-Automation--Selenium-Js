@@ -79,7 +79,7 @@ public class loginstep  {
         @Then("I should be redirected to the inventory page")
         public void i_should_be_redirected_to_the_inventory_page() {
             String currentUrl = driver.getCurrentUrl();
-            Assert.assertEquals(currentUrl, "https://www.saucedemo.com/inventory.html");
+            Assert.assertEquals(currentUrl, "https://www.saucedemo.com/v1/index.html");
             driver.quit();
     
     	
