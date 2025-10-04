@@ -11,17 +11,19 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.Assert;
 
 import io.cucumber.java.en.*;
-
-public class loginstep {
+import utils.DriverFactory;
+public class loginstep  {
 
 	WebDriver driver;
+	
+	DriverFactory driverfactory=new DriverFactory();
 
     @Given("I launch the Swag Labs login page")
     public void i_launch_the_swag_labs_login_page() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://www.saucedemo.com/");
+    	
+    	
+    	driver=driverfactory.launchome();
+        
     }
 
     @When("I enter valid username and password")
@@ -38,7 +40,7 @@ public class loginstep {
     @Then("I should be redirected to the inventory page")
     public void i_should_be_redirected_to_the_inventory_page() {
         String currentUrl = driver.getCurrentUrl();
-        Assert.assertEquals(currentUrl, "https://www.saucedemo.com/inventory.html");
+        Assert.assertEquals(currentUrl, "https://www.saucedemo.com/v1/inventory.html");
         driver.quit();
     }
 
