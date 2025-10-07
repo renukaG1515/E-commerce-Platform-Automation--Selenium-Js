@@ -6,6 +6,7 @@ package runners;
 	@CucumberOptions(
 	    features = "src/test/resources/features",
 	    glue = {"stepDefinitions","utils"},
+	    tags = "@productValidation",  // Change this to @Cart to run cart tests
 	    plugin = {
 	            "pretty",
 	            "html:target/cucumber-html-report",

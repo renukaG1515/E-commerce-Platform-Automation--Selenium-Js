@@ -3,16 +3,16 @@ import java.util.ArrayList;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.cucumber.java.en.And;
+
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.testng.Assert;
 
-import io.cucumber.java.en.*;
+
 import utils.DriverFactory;
 import utils.ExcelReader;
 public class loginstep  {
@@ -70,7 +70,13 @@ public class loginstep  {
 
             // Check result
             System.out.println("Tested login with: " + username + " / " + password);
+            
+            
+            
     	}  // restart browser for next test
+    	
+    	
+    	
         }
     	
     	
